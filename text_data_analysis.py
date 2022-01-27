@@ -1,9 +1,8 @@
-import numpy as np
-import pandas as pd
 import os
 import csv
 
-file = open('/mnt/c/CSCE587/Homework1/report.csv', 'w')
+write_file = os.getcwd() + "/report.csv"
+file = open(write_file, 'w')
 writer = csv.writer(file)
 fields = ['article-id', 'no-words', 'no-paragraphs']
 writer.writerow(fields)
